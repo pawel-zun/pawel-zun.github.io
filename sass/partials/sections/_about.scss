@@ -1,0 +1,5 @@
+.header__title--about {
+  @extend .header__title;
+  color: $sea-green;
+  border-color: #C6EEEB;
+}

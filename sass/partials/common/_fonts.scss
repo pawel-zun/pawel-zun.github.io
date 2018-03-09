@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Quando|Roboto:300,400,700');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: $dark-blue;
+}
+
+h1, h2, h3 {
+  font-family: 'Quando', serif;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 4em;
+  margin-bottom: 0.5em;
+}
+
+p {
+  margin-bottom: 1em;
+}

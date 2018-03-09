@@ -6,13 +6,14 @@
 // COMMON STYLES
 
 @import 'partials/common/reset';
+@import 'partials/common/fonts';
 @import 'partials/common/layout';
-@import 'partials/common/buttons';
+//@import 'partials/common/buttons';
 
 // SECTIONS
 
-@import 'partials/sections/masthead';
-@import 'partials/sections/_sections__about';
-@import 'partials/sections/_sections__works';
-@import 'partials/sections/_sections__contact';
+@import 'partials/sections/card';
+@import 'partials/sections/about';
+@import 'partials/sections/works';
+@import 'partials/sections/contact';
 

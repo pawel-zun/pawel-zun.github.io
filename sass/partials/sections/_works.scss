@@ -1,0 +1,5 @@
+.header__title--works {
+  @extend .header__title;
+  color: $vivid-red;
+  border-color: #F8C1C8;
+}

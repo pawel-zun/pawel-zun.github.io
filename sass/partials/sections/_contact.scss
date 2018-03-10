@@ -3,3 +3,35 @@
   color: $bright-yellow;
   border-color: #FFDCAC;
 }
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__input {
+  font-family: 'Roboto', sans-serif;
+  margin: 10px 5px;
+  padding: 15px 20px;
+  background-color: $powder-white;
+  border: 1px solid $dark-blue;
+  color: $dark-blue;
+  &::placeholder {
+    color: $dark-blue;
+  }
+  &:focus {
+  	outline: none;
+  	border-color: $bright-yellow;
+  }
+}
+
+.contact__textarea {
+  @extend .contact__input;
+	resize: none;
+}
+
+.button--contact {
+  @extend .button;
+  background-color: $bright-yellow;
+  padding: 1em 2em;
+}

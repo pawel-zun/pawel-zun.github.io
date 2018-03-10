@@ -168,6 +168,23 @@ p {
     .section__subtitle, .section__subtitle--about {
       padding-left: 5%; } }
 
+.button, .button--contact {
+  margin: 10px auto;
+  border-radius: 10px;
+  border: 0;
+  width: 100%;
+  max-width: 200px;
+  font-size: 1em;
+  text-align: center;
+  color: #FDFFFC;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: block; }
+  .button:hover, .button--contact:hover {
+    cursor: pointer; }
+  .button:focus, .button--contact:focus {
+    outline: none; }
+
 .card {
   padding: 1em 1.5em 1em 0;
   -ms-flex: 40%;
@@ -338,3 +355,35 @@ p {
 .header__title--contact {
   color: #FF9F1C;
   border-color: #FFDCAC; }
+
+.contact__form {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+.contact__input, .contact__textarea {
+  font-family: 'Roboto', sans-serif;
+  margin: 10px 5px;
+  padding: 15px 20px;
+  background-color: #FDFFFC;
+  border: 1px solid #011424;
+  color: #011424; }
+  .contact__input::-webkit-input-placeholder, .contact__textarea::-webkit-input-placeholder {
+    color: #011424; }
+  .contact__input::-moz-placeholder, .contact__textarea::-moz-placeholder {
+    color: #011424; }
+  .contact__input:-ms-input-placeholder, .contact__textarea:-ms-input-placeholder {
+    color: #011424; }
+  .contact__input::placeholder, .contact__textarea::placeholder {
+    color: #011424; }
+  .contact__input:focus, .contact__textarea:focus {
+    outline: none;
+    border-color: #FF9F1C; }
+
+.contact__textarea {
+  resize: none; }
+
+.button--contact {
+  background-color: #FF9F1C;
+  padding: 1em 2em; }

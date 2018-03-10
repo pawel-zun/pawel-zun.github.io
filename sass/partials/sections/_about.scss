@@ -3,3 +3,58 @@
   color: $sea-green;
   border-color: #C6EEEB;
 }
+
+.section__subtitle--about {
+  @extend .section__subtitle;
+  color: $sea-green;
+}
+
+.about__stack {
+	padding: 0;
+  padding-right: 5%;
+  display: flex;
+  flex-direction: column;
+	@include respond-to('medium') {
+		padding-left: 5%;
+	}
+}
+
+.stack__row {
+  display: flex;
+  justify-content: center;
+}
+
+.stack__icon {
+  width: 80px;
+  height: 80px;
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $sea-green;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 2px;
+  &:hover {
+    background-color: $sea-green;
+  }
+  &:hover [class^=devicon] {
+    color: $powder-white;
+  }
+  &:hover .stack__desc {
+    color: $powder-white;
+  }
+}
+
+.stack__devicon {
+  color: $sea-green;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.stack__desc {
+	font-weight: 700;
+  font-size: 0.8em;
+  color: $sea-green;
+  margin-bottom: 0;
+}

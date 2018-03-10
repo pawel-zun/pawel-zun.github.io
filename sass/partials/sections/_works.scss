@@ -3,3 +3,69 @@
   color: $vivid-red;
   border-color: #F8C1C8;
 }
+
+.works__carousel {
+  align-self: center;
+  width: 545px;
+  overflow: hidden;
+}
+
+.works__slides {
+  width: 1670px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.works__container {
+  display: inline-block;
+  width: 525px;
+  padding: 15px;
+  margin: 15px 10px;
+  border: 1px solid $vivid-red;
+  border-radius: 10px;
+}
+
+.works__header {
+
+}
+
+.works__title {
+  color: $vivid-red;
+  margin-top: 0.5em;
+}
+
+.works__content {
+  display: flex;
+  align-items: flex-start;
+}
+
+.works__screen {
+  flex: 50%;
+
+}
+
+.works__img {
+  width: 100%;
+
+}
+
+.works__info {
+  flex: 50%;
+  font-size: 0.8em;
+  padding-left: 1em;
+}
+
+.works__desc {
+}
+
+.works__technologies {
+
+}
+
+.works__devicon {
+  color: $vivid-red;
+}
+
+.works__preview {
+
+}

@@ -4,12 +4,15 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<link href='onepage-scroll.css' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>AWAX Studio</title>
 </head>
 <body>
 	<div class="container">
-
+		
 		<header class="card">
 			<h1 class="card__name">
 				Paweł Zuń<br>Portfolio
@@ -22,61 +25,60 @@
 		</header>
 
 		<main class="sections">
-			<section class="about">
-				<header class="sections__header">
-					<h2 class="header__title--about">O mnie</h2>
-				</header>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sagittis ligula metus, et interdum ante vulputate varius.
-					Maecenas rhoncus eleifend turpis ut malesuada. Fusce eu enim enim. Ut quis rhoncus tortor. Aenean nec aliquam tellus. Etiam
-					metus velit, egestas quis massa at, laoreet laoreet dolor. Sed ac lacus dui. Suspendisse vitae nunc pretium, lobortis felis
-					eu, ultricies mi. Nulla tempus tincidunt augue at condimentum. Nulla ac neque velit. Quisque dignissim aliquet mollis.
-					Proin ac nulla id metus tristique fermentum. Nunc arcu justo, pellentesque eget ullamcorper eget, blandit vel sapien. Suspendisse
-					id libero et mi tincidunt gravida et id arcu. Curabitur vitae interdum neque, sit amet congue leo. Maecenas euismod lobortis
-					elit imperdiet tempus.
-				</p>
-				<p>
-					Aenean fringilla laoreet massa ac faucibus. Phasellus a porttitor urna, vitae tincidunt diam. Suspendisse at egestas eros.
-					Duis sodales dui quis enim rhoncus, at porta enim aliquam. Aenean risus velit, lobortis at congue ut, tincidunt vitae lorem.
-					Morbi felis dolor, fermentum ac porta ac, bibendum in leo. Curabitur eu lobortis tellus. Donec nec nulla in tellus sollicitudin
-					pellentesque. Aliquam blandit tortor nisl, eget viverra elit congue vitae.
-				</p>
-			</section>
-			<section class="works">
-				<header class="sections__header">
-					<h2 class="header__title--works">Moje prace</h2>
-				</header>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sagittis ligula metus, et interdum ante vulputate varius.
-					Maecenas rhoncus eleifend turpis ut malesuada. Fusce eu enim enim. Ut quis rhoncus tortor. Aenean nec aliquam tellus. Etiam
-					metus velit, egestas quis massa at, laoreet laoreet dolor. Sed ac lacus dui. Suspendisse vitae nunc pretium, lobortis felis
-					eu, ultricies mi. Nulla tempus tincidunt augue at condimentum. Nulla ac neque velit. Quisque dignissim aliquet mollis. Proin
-					ac nulla id metus tristique fermentum. Nunc arcu justo, pellentesque eget ullamcorper eget, blandit vel sapien. Suspendisse
-					id libero et mi tincidunt gravida et id arcu. Curabitur vitae interdum neque, sit amet congue leo. Maecenas euismod lobortis
-					elit imperdiet tempus.
-				</p>
-			</section>
-			<section class="contact">
-				<header class="sections__header">
-					<h2 class="header__title--contact">Napisz do mnie</h2>
-				</header>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sagittis ligula metus, et interdum ante vulputate varius.
-					Maecenas rhoncus eleifend turpis ut malesuada. Fusce eu enim enim. Ut quis rhoncus tortor. Aenean nec aliquam tellus. Etiam
-					metus velit, egestas quis massa at, laoreet laoreet dolor. Sed ac lacus dui. Suspendisse vitae nunc pretium, lobortis felis
-					eu, ultricies mi. Nulla tempus tincidunt augue at condimentum. Nulla ac neque velit. Quisque dignissim aliquet mollis. Proin
-					ac nulla id metus tristique fermentum. Nunc arcu justo, pellentesque eget ullamcorper eget, blandit vel sapien. Suspendisse
-					id libero et mi tincidunt gravida et id arcu. Curabitur vitae interdum neque, sit amet congue leo. Maecenas euismod lobortis
-					elit imperdiet tempus.
-				</p>
-				<p>
-					Aenean fringilla laoreet massa ac faucibus. Phasellus a porttitor urna, vitae tincidunt diam. Suspendisse at egestas eros.
-					Duis sodales dui quis enim rhoncus, at porta enim aliquam. Aenean risus velit, lobortis at congue ut, tincidunt vitae lorem.
-					Morbi felis dolor, fermentum ac porta ac, bibendum in leo. Curabitur eu lobortis tellus. Donec nec nulla in tellus sollicitudin
-					pellentesque. Aliquam blandit tortor nisl, eget viverra elit congue vitae.
-				</p>
-			</section>
-		</main>
+			<div class="sections__wrapper">
+				<section class="section">
+					<header class="sections__header">
+						<h2 class="header__title--about">O mnie</h2>
+					</header>
+					<p class="section__paragraph">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sagittis ligula metus, et interdum ante vulputate varius.
+						Maecenas rhoncus eleifend turpis ut malesuada. Fusce eu enim enim. Ut quis rhoncus tortor. Aenean nec aliquam tellus. Etiam
+						metus velit, egestas quis massa at, laoreet laoreet dolor. Sed ac lacus dui. Suspendisse vitae nunc pretium, lobortis felis
+						eu, ultricies mi. Nulla tempus tincidunt augue at condimentum. Nulla ac neque velit. Quisque dignissim aliquet mollis.
+						Proin ac nulla id metus tristique fermentum. Nunc arcu justo, pellentesque eget ullamcorper eget, blandit vel sapien. Suspendisse
+						id libero et mi tincidunt gravida et id arcu. Curabitur vitae interdum neque, sit amet congue leo. Maecenas euismod lobortis
+						elit imperdiet tempus.
+					</p>
+					<p class="section__paragraph">
+						<i class="devicon-html5-plain"></i>
+					</p>
+				</section>
+				<section class="section">
+					<header class="sections__header">
+						<h2 class="header__title--works">Moje prace</h2>
+					</header>
+					<p class="section__paragraph">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sagittis ligula metus, et interdum ante vulputate varius.
+						Maecenas rhoncus eleifend turpis ut malesuada. Fusce eu enim enim. Ut quis rhoncus tortor. Aenean nec aliquam tellus. Etiam
+						metus velit, egestas quis massa at, laoreet laoreet dolor. Sed ac lacus dui. Suspendisse vitae nunc pretium, lobortis felis
+						eu, ultricies mi. Nulla tempus tincidunt augue at condimentum. Nulla ac neque velit. Quisque dignissim aliquet mollis.
+						Proin ac nulla id metus tristique fermentum. Nunc arcu justo, pellentesque eget ullamcorper eget, blandit vel sapien. Suspendisse
+						id libero et mi tincidunt gravida et id arcu. Curabitur vitae interdum neque, sit amet congue leo. Maecenas euismod lobortis
+						elit imperdiet tempus.
+					</p>
+				</section>
+				<section class="section">
+					<header class="sections__header">
+						<h2 class="header__title--contact">Napisz do mnie</h2>
+					</header>
+					<p class="section__paragraph">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sagittis ligula metus, et interdum ante vulputate varius.
+						Maecenas rhoncus eleifend turpis ut malesuada. Fusce eu enim enim. Ut quis rhoncus tortor. Aenean nec aliquam tellus. Etiam
+						metus velit, egestas quis massa at, laoreet laoreet dolor. Sed ac lacus dui. Suspendisse vitae nunc pretium, lobortis felis
+						eu, ultricies mi. Nulla tempus tincidunt augue at condimentum. Nulla ac neque velit. Quisque dignissim aliquet mollis.
+						Proin ac nulla id metus tristique fermentum. Nunc arcu justo, pellentesque eget ullamcorper eget, blandit vel sapien. Suspendisse
+						id libero et mi tincidunt gravida et id arcu. Curabitur vitae interdum neque, sit amet congue leo. Maecenas euismod lobortis
+						elit imperdiet tempus.
+					</p>
+					<p class="section__paragraph">
+						Aenean fringilla laoreet massa ac faucibus. Phasellus a porttitor urna, vitae tincidunt diam. Suspendisse at egestas eros.
+						Duis sodales dui quis enim rhoncus, at porta enim aliquam. Aenean risus velit, lobortis at congue ut, tincidunt vitae lorem.
+						Morbi felis dolor, fermentum ac porta ac, bibendum in leo. Curabitur eu lobortis tellus. Donec nec nulla in tellus sollicitudin
+						pellentesque. Aliquam blandit tortor nisl, eget viverra elit congue vitae.
+					</p>
+				</section>
+				</main>
+			</div>
 
 		<div class="stripes-group">
 			<div class="stripe-1"></div>
@@ -85,5 +87,7 @@
 		</div>
 
 	</div>
+	<script type="text/javascript" src="jquery.onepage-scroll.js"></script>
+	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>

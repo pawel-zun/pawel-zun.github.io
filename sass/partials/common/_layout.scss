@@ -1,12 +1,17 @@
 .container {
 	width: 100%;
 	height: 100vh;
-	padding: 0 15%;
+	padding: 0 10% 0 15%;
 	overflow: hidden;
 	display: flex;
 	position: relative;
 	background-color: $dark-blue;
 	background: linear-gradient(90deg, $dark-blue 0%, $dark-blue 65%, $powder-white 65%, $powder-white 100%);
+	@include respond-to('medium') {
+		padding: 0 10%;
+		display: block;
+		background: linear-gradient(180deg, $dark-blue 0%, $dark-blue 40%, $powder-white 40%, $powder-white 100%);
+	}
 }
 
 .stripes-group {
@@ -18,6 +23,10 @@
 	top: 25%;
 	left: -20%;
 	transform: rotate(135deg);
+	@include respond-to('medium') {
+		width: 150%;
+		top: -10%;
+	}
 }
 
 .stripe {
@@ -41,11 +50,25 @@
 }
 
 .sections {
-	padding: 1em 0 1em 1.5em;
 	flex: 60%;
 	height: 100%;
-	background-color: $powder-white;
 	z-index: 100;
+	overflow: hidden;
+	@include respond-to('medium') {
+		width: 100%;
+		height: 60%;
+	}
+}
+
+.section {
+	padding: 1em 0 1em 1.5em;
+	background-color: $powder-white;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	@include respond-to('medium') {
+		padding: 1em 0 1em 0;
+	}
 }
 
 .sections__header {
@@ -53,7 +76,14 @@
 }
 
 .header__title {
-	position: relative;
-	left: 50px;
 	border-bottom: 2px solid $dark-blue;
+}
+
+.section__paragraph {
+	text-align: justify;
+	padding: 0;
+	padding-right: 5%;
+	@include respond-to('medium') {
+		padding-left: 5%;
+	}
 }

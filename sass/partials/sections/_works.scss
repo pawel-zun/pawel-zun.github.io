@@ -9,7 +9,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin-top: 0.5em;
+  margin-top: 1em;
 }
 
 .works__controller {
@@ -29,6 +29,7 @@
   height: 40px;
   border-radius: 50%;
   transition: 0.5s ease-in;
+  padding-top: 2px;
   &:hover {
     color: $dark-blue;
     background-color: #F8C1C8;
@@ -65,7 +66,7 @@
 
 .works__container {
   width: 100%;
-  padding: 0 15px 15px;
+  padding: 0 1em 1em;
 }
 
 .works__header {
@@ -75,15 +76,17 @@
 .works__title {
   color: $vivid-red;
   margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 .works__content {
   width: 100%;
   display: flex;
+  align-items: center;
 }
 
 .works__screen {
-  flex: 50%;
+  flex: 60%;
 }
 
 .works__img {
@@ -91,22 +94,41 @@
 }
 
 .works__info {
-  flex: 50%;
+  flex: 40%;
   font-size: 0.8em;
-  padding-left: 1.5em;
+  padding-left: 2em;
 }
 
 .works__desc {
+  margin-bottom: 0.5em;
 }
 
-.works__technologies {
-
+.works__subtitle {
+  margin-bottom: 0.5em;
+  color: $vivid-red;
+  font-weight: 700;
 }
 
 .works__devicon {
-  color: $vivid-red;
+  font-size: 2em;
+  color: $dark-blue;
+  margin-right: 5px;
+  &:last-of-type {
+		margin-right: 0;
+	}
 }
 
-.works__preview {
-
+.works__link {
+  @extend .works__devicon;
+  display: inline-block;
+  text-decoration: none;
+  margin-top: -9px;
+  &:visited,
+	&:focus,
+	&:active {
+		color: $dark-blue;
+  }
+  &:hover {
+    color: $vivid-red;
+  }  
 }

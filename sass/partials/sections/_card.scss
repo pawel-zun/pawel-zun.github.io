@@ -1,5 +1,5 @@
 .card {
-	padding: 1em 1.5em 1em 0;
+	padding: 1em 0 1em 0;
 	flex: 40%;
 	height: 100%;
 	color: #FDFFFC;
@@ -77,12 +77,38 @@
 	&:hover {
 		cursor: pointer;
 		color: $dark-blue;
-		background-color: rgba(255, 255, 255, 0.4)
+		background-color: $powder-white;
 	}
 }
 
 .card__welcome {
+	margin-bottom: 0;
 	font-size: 0.8em;
 	text-align: center;
 	font-weight: 300;
+}
+
+.card__fa {
+	font-size: 21px;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background-color: $dark-blue;
+	border-radius: 50%;
+	line-height: 40px;
+	transition: 0.5s ease-out;
+	margin-top: 15px;
+	margin-right: 5px;
+	&:visited,
+	&:focus,
+	&:active {
+		color: $powder-white;
+	}
+	&:hover {
+		color: $dark-blue;
+		background-color: $powder-white;
+	}
+	&:last-of-type {
+		margin-right: 0;
+	}
 }

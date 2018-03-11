@@ -9,7 +9,8 @@
 	color: $powder-white;
 	font-weight: 700;
   text-transform: uppercase;
-  display: block;
+  display: inline-block;
+  vertical-align: middle;
 	&:hover {
     cursor: pointer;
   }

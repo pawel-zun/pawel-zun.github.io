@@ -22,6 +22,7 @@
 .card__photo {
 	width: 150px;
 	height: 150px;
+	margin: 15px 0;
 	background: url('assets/photo1.jpg');
 	background-position: center center;
 	background-size: cover;
@@ -49,6 +50,34 @@
 		left: calc(50% - 85px);
 		bottom: calc(50% - 85px);
 		background-color: rgba(255, 255, 255, 0.02);
+	}
+}
+
+.card__navigation {
+	width: 60%;
+	margin-bottom: 15px;
+}
+
+.navigation__list {
+	width: 100%;
+}
+
+.navigation__item {
+	display: block;
+	padding: 8px 20px;
+	border: 0;
+	border-radius: 20px;
+	margin-bottom: 8px;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.05);
+	transition: background-color 1s ease-in, color 0.5s ease-in;
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+	&:hover {
+		cursor: pointer;
+		color: $dark-blue;
+		background-color: rgba(255, 255, 255, 0.5)
 	}
 }
 

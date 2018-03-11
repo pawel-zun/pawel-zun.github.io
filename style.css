@@ -179,7 +179,8 @@ p {
   color: #FDFFFC;
   font-weight: 700;
   text-transform: uppercase;
-  display: block; }
+  display: inline-block;
+  vertical-align: middle; }
   .button:hover, .button--contact:hover {
     cursor: pointer; }
   .button:focus, .button--contact:focus {
@@ -212,6 +213,7 @@ p {
 .card__photo {
   width: 150px;
   height: 150px;
+  margin: 15px 0;
   background: url("assets/photo1.jpg");
   background-position: center center;
   background-size: cover;
@@ -238,6 +240,29 @@ p {
     left: calc(50% - 85px);
     bottom: calc(50% - 85px);
     background-color: rgba(255, 255, 255, 0.02); }
+
+.card__navigation {
+  width: 60%;
+  margin-bottom: 15px; }
+
+.navigation__list {
+  width: 100%; }
+
+.navigation__item {
+  display: block;
+  padding: 8px 20px;
+  border: 0;
+  border-radius: 20px;
+  margin-bottom: 8px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.05);
+  transition: background-color 1s ease-in, color 0.5s ease-in; }
+  .navigation__item:last-of-type {
+    margin-bottom: 0; }
+  .navigation__item:hover {
+    cursor: pointer;
+    color: #011424;
+    background-color: rgba(255, 255, 255, 0.5); }
 
 .card__welcome {
   font-size: 0.8em;
@@ -386,4 +411,30 @@ p {
 
 .button--contact {
   background-color: #FF9F1C;
-  padding: 1em 2em; }
+  padding: 1em 2em;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  transition: color 1s ease-in-out; }
+  .button--contact:hover {
+    color: #011424; }
+  .button--contact::before {
+    content: '';
+    position: absolute;
+    border: #FF9F1C solid 6px;
+    border-radius: 10px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    animation-duration: 1s; }
+  .button--contact:hover::before, .button--contact:focus::before, .button--contact:active::before {
+    animation-name: hvr-ripple-out; }
+
+@keyframes hvr-ripple-out {
+  100% {
+    top: -12px;
+    right: -12px;
+    bottom: -12px;
+    left: -12px;
+    opacity: 0; } }

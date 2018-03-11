@@ -368,6 +368,11 @@
         var page_index = $(this).data("index");
         el.moveTo(page_index);
       });
+      // Obsługa menu
+      $('.navigation__item').click(function () {
+        var page_index = $(this).data("index");
+        el.moveTo(page_index);
+      })
     }
 
 

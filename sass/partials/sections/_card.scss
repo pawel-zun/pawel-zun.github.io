@@ -70,14 +70,14 @@
 	margin-bottom: 8px;
 	text-align: center;
 	background-color: rgba(255, 255, 255, 0.05);
-	transition: background-color 1s ease-in, color 0.5s ease-in;
+	transition: background-color 0.75s ease-in, color 0.5s ease-in;
 	&:last-of-type {
 		margin-bottom: 0;
 	}
 	&:hover {
 		cursor: pointer;
 		color: $dark-blue;
-		background-color: rgba(255, 255, 255, 0.5)
+		background-color: rgba(255, 255, 255, 0.4)
 	}
 }
 

@@ -79,7 +79,7 @@ p {
 .container {
   width: 100%;
   height: 100vh;
-  padding: 0 10% 0 15%;
+  padding: 0 5% 0 10%;
   overflow: hidden;
   display: -ms-flexbox;
   display: flex;
@@ -170,15 +170,14 @@ p {
 
 .button, .button--contact {
   margin: 10px auto;
-  border-radius: 10px;
+  border-radius: 20px;
+  padding: 10px 20px;
   border: 0;
   width: 100%;
-  max-width: 200px;
+  max-width: 220px;
   font-size: 1em;
   text-align: center;
   color: #FDFFFC;
-  font-weight: 700;
-  text-transform: uppercase;
   display: inline-block;
   vertical-align: middle; }
   .button:hover, .button--contact:hover {
@@ -256,13 +255,13 @@ p {
   margin-bottom: 8px;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.05);
-  transition: background-color 1s ease-in, color 0.5s ease-in; }
+  transition: background-color 0.75s ease-in, color 0.5s ease-in; }
   .navigation__item:last-of-type {
     margin-bottom: 0; }
   .navigation__item:hover {
     cursor: pointer;
     color: #011424;
-    background-color: rgba(255, 255, 255, 0.5); }
+    background-color: rgba(255, 255, 255, 0.4); }
 
 .card__welcome {
   font-size: 0.8em;
@@ -330,36 +329,69 @@ p {
   color: #E71D36;
   border-color: #F8C1C8; }
 
+.works__main {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 100%;
+  margin-top: 0.5em; }
+
+.works__controller:first-of-type {
+  padding-right: 15px; }
+
+.works__controller:last-of-type {
+  padding-left: 15px; }
+
+.works__button {
+  background-color: #E71D36;
+  color: #FDFFFC;
+  border: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: 0.5s ease-in; }
+  .works__button:hover {
+    color: #011424;
+    background-color: #F8C1C8;
+    border: 1px solid #E71D36;
+    cursor: pointer; }
+  .works__button:focus {
+    outline: none; }
+  .works__button i {
+    font-size: 24px; }
+
+#btn-left {
+  padding-right: 5px; }
+
+#btn-right {
+  padding-left: 5px; }
+
 .works__carousel {
-  -ms-flex-item-align: center;
-      align-self: center;
-  width: 545px;
+  width: 100%;
+  border: 1px solid #E71D36;
+  border-radius: 10px;
   overflow: hidden; }
 
 .works__slides {
-  width: 1670px;
+  width: 300%;
   display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: start;
-      align-items: flex-start; }
+  display: flex; }
 
 .works__container {
-  display: inline-block;
-  width: 525px;
-  padding: 15px;
-  margin: 15px 10px;
-  border: 1px solid #E71D36;
-  border-radius: 10px; }
+  width: 100%;
+  padding: 0 15px 15px; }
 
 .works__title {
   color: #E71D36;
   margin-top: 0.5em; }
 
 .works__content {
+  width: 100%;
   display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: start;
-      align-items: flex-start; }
+  display: flex; }
 
 .works__screen {
   -ms-flex: 50%;
@@ -372,7 +404,7 @@ p {
   -ms-flex: 50%;
       flex: 50%;
   font-size: 0.8em;
-  padding-left: 1em; }
+  padding-left: 1.5em; }
 
 .works__devicon {
   color: #E71D36; }
@@ -395,13 +427,13 @@ p {
   border: 1px solid #011424;
   color: #011424; }
   .contact__input::-webkit-input-placeholder, .contact__textarea::-webkit-input-placeholder {
-    color: #011424; }
+    color: #5D6A75; }
   .contact__input::-moz-placeholder, .contact__textarea::-moz-placeholder {
-    color: #011424; }
+    color: #5D6A75; }
   .contact__input:-ms-input-placeholder, .contact__textarea:-ms-input-placeholder {
-    color: #011424; }
+    color: #5D6A75; }
   .contact__input::placeholder, .contact__textarea::placeholder {
-    color: #011424; }
+    color: #5D6A75; }
   .contact__input:focus, .contact__textarea:focus {
     outline: none;
     border-color: #FF9F1C; }
@@ -411,7 +443,6 @@ p {
 
 .button--contact {
   background-color: #FF9F1C;
-  padding: 1em 2em;
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px transparent;
   position: relative;
@@ -422,7 +453,7 @@ p {
     content: '';
     position: absolute;
     border: #FF9F1C solid 6px;
-    border-radius: 10px;
+    border-radius: 20px;
     top: 0;
     right: 0;
     bottom: 0;

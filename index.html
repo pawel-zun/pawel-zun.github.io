@@ -12,38 +12,59 @@
 </head>
 <body>
 	<div class="container">
-		
 		<header class="card">
-			<div class="card__photo"></div>
-			<h1 class="card__name">
-				Paweł Zuń<br>Portfolio
-			</h1>
-			<nav class="card__navigation">
-				<ul class="navigation__list">
-					<li data-index="1" class="navigation__item">
-						O mnie
-					</li>
-					<li data-index="2" class="navigation__item">
-						Moje prace
-					</li>
-					<li data-index="3" class="navigation__item">
-						Napisz do mnie
-					</li>
-				</ul>
-			</nav>
-			<p class="card__welcome">
-				<strong>Witaj na mojej stronie!</strong><br>
-				Zachęcam do zapoznania się z moimi pracami.<br>
-				Możesz mnie także znaleźć w internecie:<br>
-				<a href="https://github.com/pawel-zun" target="_blank" title="Github" class="card__fa"><i class="fa fa-github" aria-hidden="true"></i></a>
-				<a href="https://www.facebook.com/pawelzun" target="_blank" title="Facebook" class="card__fa"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-				<a href="#" title="Linked.in" class="card__fa"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-			</p>
+			<input id="card__burger" type="checkbox">
+			<label for="card__burger" class="card__burger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</label>
+			<div class="card__main">
+				<div class="card__photo">
+				</div>
+				<h1 class="card__name">
+					<span class="">Paweł Zuń</span>
+					<span class="">Portfolio</span>
+				</h1>
+			</div>
+			<div class="card__wrapper">
+				<nav class="card__navigation">
+					<ul class="navigation__list">
+						<li data-index="1" class="navigation__item">
+							O mnie
+						</li>
+						<li data-index="2" class="navigation__item">
+							Moje prace
+						</li>
+						<li data-index="3" class="navigation__item">
+							Napisz do mnie
+						</li>
+					</ul>
+				</nav>
+				<p class="card__welcome">
+					<strong>Witaj na mojej stronie!</strong>
+					<br> Zachęcam do zapoznania się z moimi pracami.
+					<br> Możesz mnie także znaleźć w internecie:
+					<br>
+					<a href="https://github.com/pawel-zun" target="_blank" title="Github" class="card__fa">
+						<i class="fa fa-github" aria-hidden="true"></i>
+					</a>
+					<a href="https://www.facebook.com/pawelzun" target="_blank" title="Facebook" class="card__fa">
+						<i class="fa fa-facebook" aria-hidden="true"></i>
+					</a>
+					<a href="#" title="Linked.in" class="card__fa">
+						<i class="fa fa-linkedin" aria-hidden="true"></i>
+					</a>
+				</p>
+			</div>
+			<div class="stripes-group">
+				<div class="stripe-1"></div>
+				<div class="stripe-2"></div>
+				<div class="stripe-3"></div>
+			</div>
 		</header>
-
 		<main class="sections">
 			<div class="sections__wrapper">
-
 				<section class="section">
 					<header class="section__header">
 						<h2 class="header__title--about">O mnie</h2>
@@ -117,7 +138,6 @@
 						</div>
 					</div>
 				</section>
-
 				<section class="section">
 					<header class="section__header">
 						<h2 class="header__title--works">Moje prace</h2>
@@ -308,7 +328,6 @@
 						</div>
 					</div>					
 				</section>
-
 				<section class="section">
 					<header class="section__header">
 						<h2 class="header__title--contact">Napisz do mnie</h2>
@@ -316,7 +335,6 @@
 					<p class="section__paragraph">
 						Jeśli chcesz nawiązać współpracę lub podzielić się swoimi przemyśleniami na temat tej strony, kina superbohaterskiego lub muzyki country - nie wahaj się wysłać mi wiadomości!
 					</p>
-
 					<form class="contact__form" action="mailto:pzun90@gmail.com" method="post" enctype="text/plain">
 						<input type="text" name="name" placeholder="Twoje imię*" class="contact__input" required>
 						<input type="email" name="mail" placeholder="Twój adres e-mail*" class="contact__input" required>
@@ -324,21 +342,13 @@
 						<textarea name="message" placeholder="Twoja wiadomość*" rows ="4" class="contact__textarea" required></textarea>
 						<button class="button--contact">Wyślij wiadomość</button>
 					</form>
-
 				</section>
-
-				</main>
 			</div>
-
-		<div class="stripes-group">
-			<div class="stripe-1"></div>
-			<div class="stripe-2"></div>
-			<div class="stripe-3"></div>
-		</div>
-
+		</main>		
 	</div>
 	<script type="text/javascript" src="jquery.onepage-scroll.js"></script>
 	<script type="text/javascript" src="script.js"></script>
 	<script type="text/javascript" src="works__carousel.js"></script>
+	<script type="text/javascript" src="responsive.js"></script>
 </body>
 </html>

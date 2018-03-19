@@ -40,4 +40,8 @@ $(function() {
   carouselArea.on('mouseleave', function () {
     keepGoing = setInterval(goLeft, 4000);
   });
+
+  if ($('.card__burger').css('display') === 'block') {
+    clearInterval(keepGoing);
+  }
 });

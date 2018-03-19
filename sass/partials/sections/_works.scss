@@ -83,6 +83,9 @@
   width: 100%;
   display: flex;
   align-items: center;
+  @include portrait('medium') {
+    flex-direction: column;
+  }
 }
 
 .works__screen {

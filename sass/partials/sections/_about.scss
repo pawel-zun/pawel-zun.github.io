@@ -16,7 +16,7 @@
   flex-direction: column;
 	@include respond-to('medium') {
 		padding-left: 5%;
-	}
+  }
 }
 
 .stack__row {
@@ -44,6 +44,18 @@
   &:hover .stack__desc {
     color: $powder-white;
   }
+  @include portrait('medium') {
+    width: 110px;
+    height: 110px;
+  }
+  @include portrait('small') {
+		width: 80px;
+    height: 80px;
+  }
+  @include portrait('smaller') {
+    width: 70px;
+    height: 70px;
+  }
 }
 
 .stack__devicon {
@@ -57,4 +69,7 @@
   font-size: 0.8em;
   color: $sea-green;
   margin-bottom: 0;
+  @include portrait('smaller') {
+    font-size: 0.7em;
+  }
 }

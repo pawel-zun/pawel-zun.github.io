@@ -4,6 +4,9 @@ body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.6;
   color: $dark-blue;
+  @include respond-to('smaller') {
+    font-size: 80%;
+  }
 }
 
 h1, h2, h3 {
@@ -17,6 +20,12 @@ h1 {
 h2 {
   font-size: 4em;
   margin-bottom: 0.5em;
+  @include landscape('small') {
+		font-size: 3em;
+  }
+  @include portrait('smaller') {
+		font-size: 3em;
+	}
 }
 
 h3 {

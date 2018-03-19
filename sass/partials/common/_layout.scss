@@ -41,9 +41,12 @@
 	flex-direction: column;
 	justify-content: center;
   z-index: 1500;
-  position: relative;
+	position: relative;
 	@include portrait('medium') {
-		padding: 0.5em;
+		font-size: 1.5em;
+	}
+	@include portrait('small') {
+		font-size: 1em;
 	}
 }
 

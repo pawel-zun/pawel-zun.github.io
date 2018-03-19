@@ -83,23 +83,39 @@
   width: 100%;
   display: flex;
   align-items: center;
-  @include portrait('medium') {
+  @include portrait('smaller') {
     flex-direction: column;
+    justify-content: center;
   }
 }
 
 .works__screen {
   flex: 60%;
+  @include portrait('medium') {
+    text-align: center;
+  }
+  @include landscape('medium') {
+    flex: 40%
+  }
 }
 
 .works__img {
   width: 100%;
+  @include portrait('smaller') {
+    margin-bottom: 20px;
+  }
+  @include portrait('smaller') {
+    width: 50%;
+  }
 }
 
 .works__info {
   flex: 40%;
   font-size: 0.8em;
   padding-left: 2em;
+  @include landscape('medium') {
+    flex: 60%
+  }
 }
 
 .works__desc {

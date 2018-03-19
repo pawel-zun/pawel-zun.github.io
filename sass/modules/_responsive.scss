@@ -1,8 +1,8 @@
 $breakpoints: (
   'medium': 1200px,
-  'small': 992px,
-  'smaller': 768px,
-  'tiny': 576px
+  'small': 991px,
+  'smaller': 767px,
+  'tiny': 575px
 ) !default;
 
 @mixin respond-to($breakpoint) {

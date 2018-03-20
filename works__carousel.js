@@ -44,4 +44,8 @@ $(function() {
   if ($('.card__burger').css('display') === 'block') {
     clearInterval(keepGoing);
   }
+
+  $(window).resize(function() {
+    clearInterval(keepGoing);
+  });
 });

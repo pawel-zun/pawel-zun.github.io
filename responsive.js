@@ -11,7 +11,7 @@ function toggleFullHeader(params) {
   $('.card__photo').toggleClass('card__photo--full');
   $('.stripes-group').toggleClass('stripes-group--full');
   $('.navigation__list').click(hideAll);
+  $(window).resize(hideAll);
 }
-
 
 $('.card__burger').click(toggleFullHeader);

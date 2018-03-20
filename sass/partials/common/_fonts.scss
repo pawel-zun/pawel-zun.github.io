@@ -7,6 +7,9 @@ body {
   @include respond-to('smaller') {
     font-size: 80%;
   }
+  @include respond-to('tiny') {
+    font-size: 70%;
+  }
 }
 
 h1, h2, h3 {
@@ -25,12 +28,28 @@ h2 {
   }
   @include portrait('smaller') {
 		font-size: 3em;
-	}
+  }
+  @include landscape('smaller') {
+    font-size: 2em;
+  }
+  @include portrait('tiny') {
+    font-size: 2em;
+  }
 }
 
 h3 {
   font-size: 1.5em;
   margin-bottom: 1em;
+  @include landscape('smaller') {
+    font-size: 1em;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+  }
+  @include portrait('tiny') {
+    font-size: 1em;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+  }
 }
 
 p {

@@ -11,7 +11,7 @@
 	justify-content: space-around;
 	z-index: 100;
 	background-color: $dark-blue;
-	position: absolute;
+	position: relative;
 	overflow: hidden;
 	@include portrait('medium') {
 		align-items: center;
@@ -55,9 +55,6 @@
 	@include respond-to('medium') {
 		display: none;
 	}
-	@include landscape('medium') {
-		width: 95%;
-	}
 }
 
 .card__main {
@@ -81,6 +78,10 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
+	width: 80%;
+	@include landscape('small') {
+		height: auto;
+	}
 }
 
 #card__burger {
@@ -88,7 +89,7 @@
 	&:checked {
 		+ .card__burger {
 			span {
-				background-color: #fff;
+				background-color: rgba(255, 255, 255, 0.8);
 				opacity: 0;
 				top: 50%;
 			}
@@ -118,7 +119,7 @@
 		top: calc(50% - 2px);
 		left: 0;
 		display: block;
-		background-color: #fff;
+		background-color: rgba(255, 255, 255, 0.7);
 		transition: .5s;
 	}
 	span:first-child {
@@ -200,6 +201,23 @@
 			bottom: calc(50% - 75px);
 		}
 	}
+	@include portrait('tiny') {
+		margin: 0 2em;
+		width: 80px;
+		height: 80px;
+		&::after {
+			width: 120px;
+			height: 120px;
+			left: calc(50% - 60px);
+			bottom: calc(50% - 60px);
+		}
+		&::before {
+			width: 100px;
+			height: 100px;
+			left: calc(50% - 50px);
+			bottom: calc(50% - 50px);
+		}
+	}
 	@include landscape('smaller') {
 		display: none;
 	}
@@ -234,6 +252,25 @@
 			height: 170px;
 			left: calc(50% - 85px);
 			bottom: calc(50% - 85px);
+		}
+	}
+	@include landscape('small') {
+		display: none;
+	}
+	@include portrait('tiny') {
+		width: 120px;
+		height: 120px;
+		&::after {
+			width: 170px;
+			height: 170px;
+			left: calc(50% - 85px);
+			bottom: calc(50% - 85px);
+		}
+		&::before {
+			width: 150px;
+			height: 150px;
+			left: calc(50% - 75px);
+			bottom: calc(50% - 75px);
 		}
 	}
 }
@@ -302,14 +339,14 @@
 	flex-direction: column;
 	width: 1600px;
 	height: 500px;
-	position: fixed;
-	top: 40%;
-	left: -50%;
+	position: absolute;
+	top: 30%;
+	left: -90%;
 	transform: rotate(135deg);
 	z-index: -1500;
 	@include portrait('medium') {
 		top: -10%;
-		left: -30%;
+		left: -60%;
 	}
 	@include landscape('medium') {
 		top: 40%;
@@ -325,6 +362,7 @@
 		left: -100%;
 	}
 	@include landscape('medium') {
+		position: fixed;
 		width: 400%;
 		top: 20%;
 		left: -130%;

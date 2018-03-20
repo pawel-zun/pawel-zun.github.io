@@ -23,11 +23,24 @@
   	outline: none;
   	border-color: $bright-yellow;
   }
+  @include landscape('small') {
+    padding: 8px 10px;
+    margin: 5px 5px;
+    height: 2em;
+  }
+  @include portrait('tiny') {
+    padding: 8px 10px;
+    margin: 5px 5px;
+    height: 2em;
+  }
 }
 
 .contact__textarea {
   @extend .contact__input;
-	resize: none;
+  resize: none;
+  @include portrait('tiny') {
+    height: 4em;
+  }
 }
 
 .button--contact {
@@ -52,6 +65,9 @@
     left: 0;
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
+    @include landscape('small') {
+      display: none;
+    }
   }
   &:hover::before,
   &:focus::before,

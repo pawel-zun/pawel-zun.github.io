@@ -42,6 +42,14 @@
   i {
     font-size: 24px;
   }
+  @include landscape('small') {
+    width: 30px;
+    height: 30px;
+  }
+  @include portrait('tiny') {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 #btn-left {
@@ -67,6 +75,9 @@
 .works__container {
   width: 100%;
   padding: 0 1em 1em;
+  @include landscape('smaller') {
+    padding: 0 0.5em 0.5em;
+  }
 }
 
 .works__header {
@@ -96,6 +107,12 @@
   }
   @include landscape('medium') {
     flex: 40%
+  }
+  @include landscape('smaller') {
+    display: none;
+  }
+  @include portrait('tiny') {
+    display: none;
   }
 }
 
